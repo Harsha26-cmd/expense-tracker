@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Smart Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="auth-container">
+    <div class="auth-left">
+        <div class="logo">💰 Smart Expense Tracker</div>
+        <h1>Welcome Back! 👋</h1>
+        <p>Sign in to continue tracking your expenses and achieving your financial goals.</p>
+        <div class="feature-box"><div>🔒 Secure</div><div>📊 Track</div><div>💰 Save</div></div>
+    </div>
+    <div class="auth-right">
+        <div class="auth-card">
+            <h2>Login to your account</h2>
+            <form method="POST">
+                <input type="email" name="email" placeholder="Enter Email" required>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <button type="submit">Login →</button>
+            </form>
+            <p class="switch-link">Don't have an account? <a href="/register">Register</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
