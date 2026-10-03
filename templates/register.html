@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Smart Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="auth-container">
+    <div class="auth-left">
+        <div class="logo">💰 Smart Expense Tracker</div>
+        <h1>Create Account 🚀</h1>
+        <p>Start your journey towards financial freedom. Track expenses, save money and manage budgets.</p>
+        <div class="feature-box"><div>⚡ Fast</div><div>📈 Growth</div><div>🔐 Secure</div></div>
+    </div>
+    <div class="auth-right">
+        <div class="auth-card">
+            <h2>Create your account</h2>
+            <form method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Create Password" required>
+                <button type="submit">Create Account →</button>
+            </form>
+            <p class="switch-link">Already have an account? <a href="/login">Login</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
