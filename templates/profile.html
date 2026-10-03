@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="main-content">
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="avatar">{{ user.name[0] }}</div>
+            <div><h1>{{ user.name }}</h1><p>{{ user.email }}</p></div>
+        </div>
+        <div class="profile-stats">
+            <div class="profile-box"><h3>Account Status</h3><p>Active ✅</p></div>
+            <div class="profile-box"><h3>Expense Tracker</h3><p>Premium Dashboard</p></div>
+        </div>
+        <a href="/dashboard" class="btn">Back to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>
