@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="main-content">
+    <div class="form-card">
+        <h1>💰 Monthly Budget</h1>
+        <form method="POST">
+            <label>Budget Amount</label>
+            <input type="number" name="budget" placeholder="Enter Monthly Budget" required>
+            <div class="form-buttons">
+                <button type="submit">Save Budget</button>
+                <a href="/dashboard" class="btn">Back To Dashboard</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
